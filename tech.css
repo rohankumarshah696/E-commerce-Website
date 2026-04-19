@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+ul li:hover{
+ cursor: pointer;
+ text-decoration: underline;
+
+}
+
+i{
+    cursor: pointer;
+}
+.menu{
+    transition: 1s ease;
+}
+.left,.right{
+ color: white;
+ bottom: 50%;
+ z-index: 5;
+}
+.right{
+    transform: rotate(90deg);
+}
+.left{
+    transform: rotate(-90deg);
+}
+.logo_anim{
+    font-size: larger;
+    transform: translateX(-25vw);
+    z-index: 5;
+    transition: 1s ease;
+}
+.logo_anim_v_small{
+    font-size: larger;
+    transform: translateX(-17vw);
+    z-index: 5;
+    transition: 1s ease;
+}
+.input_anim_small_screen{
+    /* display: block; */
+    right: 20%;
+    left: 34%;
+    animation: input__anim 1s ease forwards;
+}
+.input_anim_big_screen{
+    /* display: block; */
+    right: 30%;
+    left: 30%;
+    animation: input__anim 1s ease forwards;
+}
+
+.input_anim_v_small{
+    /* display: block; */
+    width: 30px;
+    right: 70%;
+    left: 40%;
+    animation:input__anim_v_small 1s ease forwards;
+}
+.search_anim_v_small{
+    transform: translateX(clamp(40px,25vw,80px));
+    z-index: 4;
+     transition: 1s ease;
+}
+@keyframes input__anim_v_small {
+    0%{width: 4%;}
+    100%{width: 45%;} 
+}
+
+.input_anim_mid_screen{
+    /* display: block; */
+    right: 50%;
+    left: 32%;
+    animation: input__anim_mid 1s ease forwards;
+}
+.search_anim{
+    transform: translateX(clamp(40px,15vw,80px));
+    z-index: 4;
+     transition: 1s ease;
+}
+@keyframes input__anim_mid {
+    0%{width: 4%;}
+    100%{width: 45%;} 
+}
+@keyframes input__anim {
+    0%{width: 4%;}
+    100%{width: 55%;} 
+}
+.display_none{
+    display: none ;
+}
+
+
+
+
+.options.active{
+    background-color: rgb(144, 138, 138);
+}
+
+footer>div>p:hover{
+cursor: pointer;
+text-decoration: underline;
+color: white;
+}

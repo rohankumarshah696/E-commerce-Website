@@ -1,0 +1,16 @@
+  <div data-id="${k.id}" class="relative product_show shadow-black shadow-2xl h-fit p-2 w-30 sm:w-50 bg-gray-300 rounded-md pt-2  md:w-60 flex justify-center gap-1.5 items-center flex-col pl-3 ">
+                <div class="product_details absolute inset-0 bg-white pt-2 flex-col items-center justify-center opacity-0 hidden transition-opacity duration-1000 details text-black   overflow-scroll no-scrollbar">
+               
+               <p class=" ext-sm text-gray-700">${k.details}</p>
+               <input type="button" value="Close" class="close-details bg-black text-white h-8 w-25 rounded-sm mt-4 cursor-pointer">
+            </div> 
+                <img src="${k.src}" alt="" class=" h-30 object-cover  mix-blend-multiply rounded-2xl">
+                  <p class="font-extrabold text-md">${k.name}</p>
+                  <p class="font-bold text-orange-700">${k.price}</p>
+                  <div class="flex gap-2 items-center justify-center flex-wrap">
+                  <input type="button" value="Buy Now" class="purchase bg-black  text-white h-8 w-25 rounded-sm cursor-pointer">
+                  <input type="button" value="View Details" class="details bg-black  text-white h-8 w-25 rounded-sm cursor-pointer">
+                  </div>
+                  <i class="fa-regular fa-heart favourite_list absolute right-2 top-2"></i>
+                 <i class="fa-solid fa-cart-shopping absolute left-2 top-2 cart_list">
+            </div>

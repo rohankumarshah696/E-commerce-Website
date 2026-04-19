@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+i:hover,footer>div>p:hover{
+cursor: pointer;
+color: white;
+}

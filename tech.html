@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sleek Gadgets</title>
+</head>
+<body class=" overflow-x-hidden ">
+    <nav class="nav sticky h-15 w-full bg-black text-white flex justify-between items-center pr-8 pl-2 sm:pl-5 xl:pl-10 xl:pr-10 ">
+      <img src="/Assets/Icons/Menu.png" alt="" class="menu h-7 w-10 rounded-full cursor-pointer md:hidden">
+        <h1 class="text-xl sm:text-3xl  font-bold cursor-pointer logo"><a href="#">Sleek Gadgets</a></h1>
+        <input type="text" id="nav_search" class=" hidden text-center outline-blue-800 text-md p-2 text-black rounded-sm bg-white absolute left-60 w-1">
+        <ul class="pages relative md:flex justify-center  items-center  hidden gap-4 md:text-xl xl:gap-15">
+             <!-- <input type="text" id="nav_search" class="absolute bg-white "> -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#Categories">Categories</a></li>
+            <li><a href="#Deals">Deals</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="flex w-fit scale-130 justify-center gap-2 md:gap-3 items-center">
+        <i class="fa-solid fa-magnifying-glass search_icon"></i>
+        <i class="fa-regular fa-heart relative favorites_icon"> <p class="favourites_score absolute text-[10px] -top-2 z-5 -right-1 h-3 rounded-full w-3 text-white text-center"></p></i>
+        <i class="fa-solid fa-cart-shopping relative cart_icon"><p class="cart_score absolute text-[10px] -top-2 z-5 -right-1 h-3 rounded-full w-3 text-white text-center"></p></i>
+       <i class="fa-regular fa-circle-user profile_icon"></i>
+        </div>
+    </nav>
+    <div class="absolute menu_contents w-fit h-fit  hidden  z-55">
+        <ul class="pages relative flex justify-center  flex-col  text-xl text-white bg-black">
+             <!-- <input type="text" id="nav_search" class="absolute bg-white "> -->
+            <li class=" h-10  pl-3 pr-3 border border-black "><a href="#">Home</a></li>
+            <li class=" h-10  pl-3 pr-3 border border-black "><a href="#products">Shop</a></li>
+            <li class="h-10  pl-3 pr-3 border border-black "><a href="#Categories">Categories</a></li>
+            <li class=" h-10  pl-3 pr-3 border border-black "><a href="#Deals">Deals</a></li>
+            <li class=" h-10  pl-3 pr-3 border border-black "><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    <div class="container hidden m-5 h-full w-full justify-center items-center flex-wrap gap-5"></div>
+    <div class="cart hidden m-5  justify-center items-center flex-wrap gap-5">   
+        </div>
+    <div class="favourite hidden m-5  justify-center items-center flex-wrap gap-5">   
+        </div>
+    <section class="searchtime hero relative h-70 w-full md:h-100  text-white">
+        <i class="left fa-solid fa-chevron-down absolute right-0 h-20   opacity-100"></i>
+        <i class="right fa-solid fa-chevron-down absolute left-0 h-20   opacity-100"></i>  
+    <div class="slide absolute h-full w-full bg-[url('/Assets/Hero/Hero.avif')] md:bg-[url('/Assets/Hero/hero3.jpeg')] bg-cover md:bg-contain pl-2 flex flex-col  text-white md:pl-20 justify-center gap-2 opacity-100 transition-opacity  duration-1000">
+          <span class="font-bold  text-4xl">Discover the best </span>
+          <span class="font-bold  text-4xl"> for you</span>
+     <p>Explore our top-rated gadgets and find your perfect match.</p>
+     <input type="button" value="Shop Now" class=" rounded-md h-10 w-25 bg-gray-900 cursor-pointer">
+        </div>
+    <div class="slide absolute h-full w-full bg-[url('/Assets/Hero/Hero2.avif')] md:bg-[url('/Assets/Hero/hero4.jpg')] bg-cover md:bg-contain   flex flex-col p-5 text-white md:items-center justify-center gap-2 opacity-0 transition-opacity duration-1000 ">
+          <span class="font-bold  text-4xl">Discover the best </span>
+          <span class="font-bold  text-4xl"> for you</span>
+     <p>Explore our top-rated gadgets and find your perfect match.</p>
+     <input type="button" value="Shop Now" class=" rounded-md h-10 w-25 bg-gray-900 cursor-pointer">
+        </div>
+    <div class="slide absolute h-full w-full bg-[url('/Assets/Hero/Hero5.avif')] md:bg-[url('/Assets/Hero/hero6.avif')] bg-cover md:bg-contain   flex flex-col p-5 text-white md:items-center justify-center gap-2 opacity-0 transition-opacity duration-1000">
+          <span class="font-bold  text-4xl">Discover the best </span>
+          <span class="font-bold  text-4xl"> for you</span>
+     <p>Explore our top-rated gadgets and find your perfect match.</p>
+     <input type="button" value="Shop Now" class=" rounded-md h-10 w-25 bg-gray-900 cursor-pointer">
+        </div>
+        </section>
+        <div id="Categories" class="searchtime categories flex flex-wrap justify-center items-center m-5 gap-6">
+            <input type="button" value="All" data-category="all"  class="options active w-13 cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 active">
+            <input type="button" value="Laptops" data-category="Laptop"  class="options cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 ">
+            <input type="button" value="Headphones" data-category="Headphones"  class="options cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 ">
+            <input type="button" value="Smartwatches" data-category="Watch"  class="options cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 ">
+            <input type="button" value="Accessories" data-category="Accessory"  class="options cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 ">
+            <input type="button" value="Mouse"  data-category="Mouse" class="options cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 ">
+            <input type="button" value="Keyboards" data-category="Keyboard"  class="options cursor-pointer p-2 border border-gray-400 rounded-sm hover:bg-gray-400 ">
+        </div>
+        <div id="products" class="searchtime products m-1 flex justify-center items-center flex-wrap gap-3  sm:gap-5">   
+        </div>
+     <div id="Deals" class="searchtime text-center">
+       <span class="text-2xl font-bold ">Customer's Review</span>
+       <div class="review p-4 flex flex-wrap gap-4 items-center justify-center">
+       </div>
+       <input type="button" value="Load More Reviews" class="p-4 mt-2 bg-black cursor-pointer text-white rounded-xl font-bold">
+       </div>
+      <footer id="Contact" class="searchtime bg-gray-500 mt-4 mb-4 p-3 flex items-center justify-center gap-10 flex-wrap">
+      <div class="About flex flex-col">
+          <span class="font-bold">About Us</span>
+          <p>Our Story</p>
+          <p>Contact Us</p>
+
+      </div>
+      <div class="contact flex flex-col">
+          <span class="font-bold">Customer Services</span>
+          <p>FAQ</p>
+          <p>Shipping & returns</p>
+
+      </div>
+      <div class="Follow flex flex-col ">
+          <span class="font-bold">Follow Us</span>
+          <div class="mt-5 flex flex-wrap gap-3">
+           <i class="fa-brands fa-tiktok"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-facebook"></i>
+           </div>
+      </div>
+      </footer>
+        <script type="module" src="tech.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<body class="no-scrollbar bg-gray-400 p-4 flex flex-col items-center justify-center h-fit text-white">
+    <div class="sm:grid sm:grid-cols-2 gap-4 items-center">
+        <div class=" flex justify-center items-center"> <img src="" class="h-50 object-cover  mix-blend-multiply rounded-2xl image" alt=""></div>
+   <div class=" flex flex-col gap-2 text-xl">
+    <span class="product_name text-black font-bold text-3xl "></span>
+    <p class="description">Description</p>
+    <p class="product_price text-black font-bold"></p>
+    <span class="flex gap-4">Quantity: <input type="number" value="1" name="" id="rangeval" class="bg-white w-40 rounded-md pl-2 pr-2 text-black"></span>
+    <p class="total_price text-black font-bold"></p>
+   <input type="button" value="Buy Now" class="bg-red-600 pr-2 pl-2 w-fit h-10 rounded-xl cursor-pointer">
+   </div>
+   </div>
+   <footer id="Contact" class="mt-10 bg-gray-500 text-black w-full p-3 flex items-center justify-center gap-10 flex-wrap">
+      <div class="About flex flex-col">
+          <span class="font-bold">About Us</span>
+          <p>Our Story</p>
+          <p>Contact Us</p>
+
+      </div>
+      <div class="contact flex flex-col">
+          <span class="font-bold">Customer Services</span>
+          <p>FAQ</p>
+          <p>Shipping & returns</p>
+
+      </div>
+      <div class="Follow flex flex-col ">
+          <span class="font-bold">Follow Us</span>
+          <div class="mt-5 flex flex-wrap gap-3">
+           <i class="fa-brands fa-tiktok"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-facebook"></i>
+           </div>
+      </div>
+      </footer>
+    <script type="module" src="buy.js"></script>
+</body>
+</html>
