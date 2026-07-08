@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         review.innerHTML += `
         <div class="h-20 sm:h-30 p-2 w-30 sm:w-65 rounded-xl bg-gray-500 shadow-gray-800 shadow-xl flex flex-col overflow-scroll no-scrollbar">
               <div class="person p-1 flex sm:gap-3 items-center">
-                <img src="${k.src}" alt="" class="h-5 sm:h-15 rounded-full">
+                <img src="${k.src}" alt="${k.name}" class="h-5 sm:h-15 rounded-full">
                 <p class="font-bold sm:text-2xl">${k.name}</p>
               </div>
               <p class=" sm:mt-2 sm:text-md font-medium">${k.review}</p>
