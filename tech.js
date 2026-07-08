@@ -73,13 +73,13 @@ document.addEventListener("DOMContentLoaded",()=>{
 document.addEventListener("click",(e)=>{
       //for profile
       if(e.target.closest(".profile_icon")){
-            window.location.href="/login page/login.html";
+            window.location.href="login page/login.html";
       }
       //buying
       if(e.target.closest(".purchase")){
             let trargetted_btn=e.target.closest(".purchase");
             let product_id=trargetted_btn.closest(".product_show").dataset.id;
-         window.location.href=`/buynow/buy.html?id=${product_id}`;
+         window.location.href=`buynow/buy.html?id=${product_id}`;
       }
 
       //buying on touch
@@ -94,7 +94,7 @@ document.addEventListener("click",(e)=>{
     if ( window.matchMedia("(max-width: 640px)").matches) {
         const product_id = product.dataset.id;
         if (product_id) {
-            window.location.href = `/buynow/buy.html?id=${product_id}`;
+            window.location.href = `buynow/buy.html?id=${product_id}`;
         }
     }
 }
